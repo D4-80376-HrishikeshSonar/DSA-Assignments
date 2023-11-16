@@ -1,0 +1,48 @@
+package q3;
+
+public class BinarySearch {
+	
+	
+	public static void BinarySearch(int [] arr, int key)
+	{
+		int l=0, r = arr.length-1;
+		int mid;
+		int count = 1;
+		
+		while(l<=r) {
+			
+		System.out.println("Count" + count++);	
+		mid = (l+r)/2;
+		
+		
+		if(key == arr[mid])	{
+			System.out.println("element found at "+ mid);
+			System.exit(0);
+		}
+		else if(key<arr[mid]) {
+			r = mid -1;
+		}
+		else if(key>arr[mid]) {
+			l = mid +1;
+		}
+		
+		
+		}
+		System.out.println("Element not found");
+		
+	}
+
+	public static void main(String[] args) {
+		int [] arr = {11,21,31,41,55,60,65,77,88,99};
+		
+		int key = 99;
+		
+		BinarySearch(arr, key);
+		
+		
+		
+		
+
+	}
+
+}

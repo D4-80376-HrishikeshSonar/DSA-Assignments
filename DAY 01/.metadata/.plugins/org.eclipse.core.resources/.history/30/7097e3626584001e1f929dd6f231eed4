@@ -1,0 +1,10 @@
+package q1;
+
+import java.util.Scanner;
+
+public class PalindromeRecursive {
+
+	Scanner sc= new Scanner(System.in);
+	
+	
+}

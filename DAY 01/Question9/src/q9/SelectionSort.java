@@ -1,0 +1,35 @@
+package q9;
+
+public class SelectionSort {
+	
+	
+	public static void SelectionSort(Integer [] arr) {
+		int counter = 0;
+		for(int i = 0; i< arr.length-1; i++) {
+			for(int j = i+1; j< arr.length; j++) {
+				if(arr[i] > arr[j]) {
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+				counter += 1;
+				
+			}
+		}
+		
+		System.out.println("Number of comparisons "+ counter);
+	}
+
+	public static void main(String[] args) {
+
+		Integer arr[]= {11,23,34,23,23,45,54,23,68,91,76,81, 23, 34,81};
+		
+		SelectionSort(arr);
+		
+		for (Integer integer : arr) {
+			System.out.println(integer);
+		}
+		
+	}
+
+}

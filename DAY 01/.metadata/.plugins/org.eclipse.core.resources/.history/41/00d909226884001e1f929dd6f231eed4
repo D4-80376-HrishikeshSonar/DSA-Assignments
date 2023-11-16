@@ -1,0 +1,29 @@
+package q1;
+
+import java.util.Scanner;
+
+public class PalindromeRecursive {
+	
+	
+	public static boolean palindromeRecur(String word, int l, int r) {
+		if(l<=r) {
+			if(word.charAt(l) == word.charAt(r) ) {
+				palindromeRecur(word, l++, r--);
+			}
+		}
+		return true;
+
+	
+	}
+
+public static void main(String [] args) {
+	
+	Scanner sc= new Scanner(System.in);
+	String word ;
+	System.out.println("Enter a word: ");
+	word = sc.next().toLowerCase();
+	int l = 0, r = word.length()-1;
+	
+	System.out.println(palindromeRecur(word, l,r));
+}
+}

@@ -1,0 +1,24 @@
+package q7;
+
+import java.util.LinkedHashMap;
+
+public class NonReapeatingElement {
+
+	public static void main(String[] args) {
+
+		LinkedHashMap<Integer, Integer> lhm = new LinkedHashMap<>();
+		int arr[] = { 1, 2, 3, -1, 2, 1, 0, 4, -1, 7, 8 };
+		int count = 1;
+		for(int i = 0; i<arr.length; i++)
+		{
+			if(lhm.containsKey(arr[i]))
+			{
+				count++;
+			}
+			lhm.put(arr[i], count );
+			count = 1;
+		}
+		System.out.println(lhm.entrySet());
+	}
+
+}

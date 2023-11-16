@@ -1,0 +1,21 @@
+package q1;
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		String word = "Nitin";
+		
+		StringBuilder word1 = new StringBuilder(word);
+		StringBuilder word2 = new StringBuilder(word);
+
+		
+		if(word1.reverse() == word2) {
+			System.out.println("Palindrome");
+		}
+		else {
+			System.out.println("Not a palindrome");
+		}
+		
+	}
+
+}

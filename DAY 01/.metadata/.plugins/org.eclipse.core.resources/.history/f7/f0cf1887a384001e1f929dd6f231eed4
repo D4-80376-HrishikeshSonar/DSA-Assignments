@@ -1,0 +1,25 @@
+package q8;
+
+import java.util.Arrays;
+
+public class RankOfElement {
+
+	public static void main(String[] args) {
+		
+		Integer arr[]= {11,23,34,23,23,45,54,23,68,91,76,81, 23, 34};
+		
+		Arrays.sort(arr);
+		
+		for (Integer integer : arr) {
+			System.out.println(integer);
+		}		
+		
+		
+		
+		
+
+
+		
+	}
+
+}
